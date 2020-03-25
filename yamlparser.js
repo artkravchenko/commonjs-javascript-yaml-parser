@@ -427,7 +427,7 @@ var YAML =
         return lines.join("\n");
     }
     
-    function eval(str) {
+    function evaluate(str) {
         errors = [];
         reference_blocks = [];
         processing_time = (new Date()).getTime();
@@ -445,7 +445,7 @@ var YAML =
          * @param {String} str String with the YAML file contents.
          * @function
          */
-        eval : eval,
+        eval : evaluate,
         
         /**
          * Get errors found when parsing the last file.
